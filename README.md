@@ -8,6 +8,8 @@ Outlook for Mac cannot connect to CalDAV or CardDAV servers, even though Apple C
 
 > Not affiliated with or endorsed by Microsoft. "Outlook" is a trademark of Microsoft Corporation.
 
+> **No support — use as is.** This tool was built for my own setup, where it has been tested and is in daily use. It is shared **as is**, without support or warranty. Everyone who installs it uses it at their own risk and is responsible for their own data. Keep your own backups. Issues and pull requests are welcome, but there is no promise of a reply or a fix.
+
 ## Requirements
 
 | Requirement | Detail |

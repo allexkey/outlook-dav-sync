@@ -8,6 +8,8 @@ Outlook pentru Mac nu se poate conecta la servere CalDAV sau CardDAV, deși Cale
 
 > Proiectul nu este afiliat cu Microsoft și nu este aprobat de Microsoft.
 
+> **Fără suport, se folosește așa cum este.** Programul a fost făcut pentru configurația mea, unde a fost testat și e folosit zilnic. Este oferit **așa cum este**, fără suport și fără garanție. Fiecare îl folosește pe propria răspundere și răspunde de datele lui. Păstrează-ți propriile backup-uri. Sesizările și contribuțiile sunt binevenite, dar nu există o promisiune de răspuns sau de rezolvare.
+
 ## Cerințe
 
 | Cerință | Detalii |

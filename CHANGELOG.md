@@ -31,6 +31,11 @@ cd outlook-dav-sync && ./install.sh
 
 Reports for other servers (Nextcloud, Radicale, Baïkal, SOGo…) are welcome.
 
+### No support — use as is
+- Tested and in daily use on the setup listed above.
+- Shared **as is**, without support or warranty.
+- Everyone uses it at their own risk and keeps their own backups.
+
 ### Known limitations
 - New Outlook for Mac is not supported, because it cannot be scripted.
 - Reminders and tasks are not synced.
