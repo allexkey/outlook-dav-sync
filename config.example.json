@@ -1,0 +1,10 @@
+{
+  "username": "you@example.com",
+  "calendar_url": "https://mail.example.com:2080/calendars/you@example.com/calendar/",
+  "addressbook_url": "https://mail.example.com:2080/addressbooks/you@example.com/addressbook/",
+  "outlook_calendar": "CalDAV Calendar",
+  "outlook_addressbook": "CardDAV Contacts",
+  "sync_calendar": true,
+  "sync_contacts": true,
+  "max_delete_fraction": 0.2
+}

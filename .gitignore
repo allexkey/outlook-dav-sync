@@ -1,0 +1,11 @@
+# Personal data never belongs in the repo (it lives in ~/Library/Application Support/outlook-dav-sync)
+config.json
+state.json
+backups/
+*.log
+*.ics
+*.vcf
+# Python / macOS
+__pycache__/
+*.pyc
+.DS_Store
