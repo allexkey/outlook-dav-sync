@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outlook for Mac CalDAV &amp; CardDAV sync — outlook-dav-sync</title>
+<meta name="description" content="Connect Outlook for Mac to a CalDAV / CardDAV server. Free, open-source two-way sync of calendar and contacts between Legacy Outlook and cPanel, Nextcloud, Radicale or Baïkal — no Exchange needed.">
+<link rel="canonical" href="https://allexkey.github.io/outlook-dav-sync/">
+<!-- Google Search Console: paste the verification tag here, e.g.
+<meta name="google-site-verification" content="..."> -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Outlook for Mac CalDAV &amp; CardDAV sync">
+<meta property="og:description" content="Free two-way sync of calendar and contacts between Legacy Outlook for Mac and any CalDAV/CardDAV server. No Exchange needed.">
+<meta property="og:url" content="https://allexkey.github.io/outlook-dav-sync/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "outlook-dav-sync",
+  "description": "Two-way CalDAV and CardDAV sync for Legacy Outlook for Mac: calendar and contacts, no Exchange needed.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "macOS",
+  "softwareVersion": "1.0.0",
+  "license": "https://opensource.org/licenses/MIT",
+  "url": "https://allexkey.github.io/outlook-dav-sync/",
+  "downloadUrl": "https://github.com/allexkey/outlook-dav-sync",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+<style>
+:root {
+  --bg: #fbfbfa; --fg: #1d1d1f; --muted: #5f6368; --card: #ffffff; --line: #e3e3e0;
+  --accent: #0a66c2; --accent-fg: #ffffff; --code: #f1f1ee;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #141416; --fg: #ececec; --muted: #a1a1a6; --card: #1c1c1f; --line: #2e2e33;
+          --accent: #4ea1f5; --accent-fg: #0b0b0c; --code: #232327; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 820px; margin: 0 auto; padding: 56px 16px 72px; }
+h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -0.02em; }
+h2 { font-size: 24px; margin: 48px 0 12px; letter-spacing: -0.01em; }
+p.lead { font-size: 20px; color: var(--muted); margin: 0 0 28px; }
+a { color: var(--accent); }
+.cta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.btn { display: inline-block; padding: 11px 20px; border-radius: 8px; text-decoration: none; font-weight: 600;
+  background: var(--accent); color: var(--accent-fg); }
+.btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--line); }
+pre { background: var(--code); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  overflow-x: auto; font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; }
+code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+.card h3 { margin: 0 0 6px; font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+details { border-bottom: 1px solid var(--line); padding: 12px 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--muted); margin: 8px 0 0; }
+footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Connect Outlook for Mac to CalDAV and CardDAV</h1>
+  <p class="lead">Outlook for Mac cannot add CalDAV or CardDAV accounts — even though Apple Calendar can.
+    <strong>outlook-dav-sync</strong> is a free, open-source tool that keeps an Outlook calendar and address book
+    in two-way sync with your own server. No Exchange, no Microsoft 365 needed.</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/allexkey/outlook-dav-sync">Get it on GitHub</a>
+    <a class="btn ghost" href="https://github.com/allexkey/outlook-dav-sync#install">Install guide</a>
+  </div>
+
+  <h2>Install in one command</h2>
+  <pre>git clone https://github.com/allexkey/outlook-dav-sync.git
+cd outlook-dav-sync &amp;&amp; ./install.sh</pre>
+  <p>The installer asks for your server address and username, stores the password in the macOS Keychain,
+    shows a dry run of what would change, and then syncs every 3 minutes in the background while Outlook is open.</p>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Calendar, both ways</h3><p>Events, all-day events, recurring series and their exceptions.</p></div>
+    <div class="card"><h3>Contacts, both ways</h3><p>Names, companies, phones, e-mails, addresses and notes.</p></div>
+    <div class="card"><h3>Keeps server data</h3><p>Attendees, organizer, alarms and contact photos on the server are preserved when you edit in Outlook.</p></div>
+    <div class="card"><h3>Safe by default</h3><p>Full backup on first run, a backup before every delete, and a stop if a run would delete too much.</p></div>
+    <div class="card"><h3>Password in Keychain</h3><p>Never written to a file. Plain HTTPS to your own server, nothing else.</p></div>
+    <div class="card"><h3>No dependencies</h3><p>Python standard library and Outlook's own scripting support. MIT licensed.</p></div>
+  </div>
+
+  <h2>Works with</h2>
+  <p><strong>Tested:</strong> cPanel CalDAV/CardDAV (<code>cpdavd</code>, port 2080) with Legacy Outlook 16.115 on macOS.<br>
+    <strong>Should work:</strong> any standards-compliant server with username/password login — Nextcloud, Radicale,
+    Baïkal, SOGo, DAViCal, Fastmail, mailbox.org. Reports are welcome in
+    <a href="https://github.com/allexkey/outlook-dav-sync/issues">GitHub issues</a>.</p>
+
+  <h2>Questions</h2>
+  <details><summary>Does Outlook for Mac support CalDAV?</summary>
+    <p>No. Outlook for Mac supports Exchange, Microsoft 365, Outlook.com, Google and iCloud accounts, but not generic
+      CalDAV or CardDAV servers. This tool fills that gap by syncing a local Outlook calendar and address book with your server.</p></details>
+  <details><summary>Does it work with New Outlook for Mac?</summary>
+    <p>Not yet. New Outlook cannot be scripted, so the tool needs Legacy Outlook (Outlook menu → Legacy Outlook).</p></details>
+  <details><summary>Is CalDav Synchronizer available for Mac?</summary>
+    <p>No, CalDav Synchronizer is a Windows add-in. On the Mac, outlook-dav-sync covers the same need for calendar and contacts.</p></details>
+  <details><summary>What happens if I edit the same event in two places?</summary>
+    <p>The server version wins and the Outlook version is saved as a backup file, so nothing is lost silently.</p></details>
+  <details><summary>Does it sync reminders and tasks?</summary>
+    <p>No. Reminders stay local on each side, and tasks (VTODO) are not synced.</p></details>
+
+  <footer>
+    outlook-dav-sync is open source under the MIT license. Not affiliated with or endorsed by Microsoft;
+    "Outlook" is a trademark of Microsoft Corporation.
+  </footer>
+</main>
+</body>
+</html>
